@@ -11,6 +11,12 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        textTheme: TextTheme(
+          bodyText1: TextStyle(fontFamily: "Montserrat"),
+          bodyText2: TextStyle(fontFamily: "Montserrat"),
+        ),
+      ),
       home: HomePage(),
     );
   }
